@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Surfer</title>
+
+
+
+
+
+</head>
+
+<body>
+    <header id="header-ripple">
+        <a href="index1.html"><button style="width:100px; height:40px;" type="submit">Зображення</button></a>
+        <a href="index2.html"><button style="width:170px; height:40px;" type="submit">Розширений пошук</button></a>
+        
+        <form action="https://google.com/search">
+            <h1>Серфер</h1>
+            <div><input type="text" name="q"></div>
+            <div><button style="width:100px; height:40px;" type="submit">Серфити</button>
+                
+            </div>
+
+        </form>
+
+    </header>
+    <?php include 'js/jquery-3.6.0.min.js'; ?>
+    <?php include 'js/jquery.ripples-min.js'; ?>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.ripples-min.js"></script>
+    <script>
+        $('#header-ripple').ripples({
+            resolution: 500,
+            dropRadius: 23,
+            perturbance: 0.02
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>
